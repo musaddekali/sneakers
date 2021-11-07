@@ -1,0 +1,14 @@
+.fade-up-left {
+  animation: fade-up-left 0.3s linear;
+}
+
+@keyframes fade-up-left {
+  from {
+    transform: translateX(-250px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}

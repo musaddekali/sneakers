@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.3/venobox.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header class="header fixed-top">
+        <div class="container">
+            <nav class="nav-menu">
+                <div class="nav-menu-toggler d-lg-none">
+                    <!-- <img src="./src/images/icon-menu.svg" alt="menu-icon"> -->
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z" fill="currentColor" fill-rule="evenodd" />
+                    </svg>
+                </div>
+                <a href="index.html" class="logo-brand">
+                    <img src="./src/images/logo.svg" alt="logo" class="img-fluid">
+                </a>
+                <div class="nav-menu-nav">
+                    <span class="nav-menu-nav-close d-lg-none">
+                        <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+                                fill="currentColor" fill-rule="evenodd" />
+                        </svg>
+                    </span>
+                    <ul>
+                        <li><a href="">Collections</a></li>
+                        <li><a href="">Men</a></li>
+                        <li><a href="">Women</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-menu-settings">
+                    <div class="added-cart-item">
+                        <div class="nav-cart">
+                            <span class="item-total-quantity">5</span>
+                            <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor"
+                                    d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                                    fill-rule="nonzero" />
+                            </svg>
+                        </div>
+                        <!-- DropDown Shoping Cart  -->
+                        <div class="shoping-cart-wrap">
+                            <div class="header">
+                                <h5>Cart</h5>
+                            </div>
+                            <hr>
+                            <div class="body">
+                                <div class="order-item">
+                                    <div class="image">
+                                        <img src="./src/images/image-product-1.jpg" alt="product" class="img-fluid">
+                                    </div>
+                                    <div class="name">
+                                        <span>Fall limited edition sneakers</span>
+                                        <div class="subtext">
+                                            <span class="amount">$125.00</span>
+                                            <span class="multiply">X</span>
+                                            <span class="quantity">3</span>
+                                            <strong class="total"> $375.00 </strong>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="remove" title="Remove from cart">
+                                        <img src="./src/images/icon-delete.svg" alt="delete-svg">
+                                    </button>
+                                </div>
+                                <div class="order-item">
+                                    <div class="image">
+                                        <img src="./src/images/image-product-1.jpg" alt="product" class="img-fluid">
+                                    </div>
+                                    <div class="name">
+                                        <span>Fall limited edition sneakers</span>
+                                        <div class="subtext">
+                                            <span class="amount">$125.00</span>
+                                            <span class="multiply">X</span>
+                                            <span class="quantity">3</span>
+                                            <strong class="total"> $375.00 </strong>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="remove" title="Remove from cart">
+                                        <img src="./src/images/icon-delete.svg" alt="delete-svg">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn-brand btn-brand-orange checkout" type="button">Checkout</button>
+                            </div>
+                        </div>
+                        <!-- End DropDown Shoping Cart  -->
+                    </div>
+                    <button type="button" class="user-profile">
+                        <div class="image">
+                            <img src="./src/images/user-avatar.png" alt="user" class="img-fluid">
+                        </div>
+                    </button>
+                </div>
+            </nav>
+            <hr class="d-lg-block d-none header-hr">
+        </div>
+    </header>
+    <!-- End Header  -->
+    <!--  Main  -->
+    <main class="main">
+        <!-- ======= Product Details Section ======= -->
+        <section class="product-details">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="product-details-images">
+                            <div class="image">
+                                <a class="venobox" data-gall="product-details" href="./src/images/image-product-1.jpg" title="Click to see more images">
+                                    <img src="./src/images/image-product-1.jpg" alt="product" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="image-thumbnails">
+                                <a class="venobox" data-gall="product-details" href="./src/images/image-product-1.jpg">
+                                    <img src="./src/images/image-product-1.jpg" alt="thumbnails" class="img-fluid">
+                                </a>
+                                <a class="venobox" data-gall="product-details" href="./src/images/image-product-2.jpg">
+                                    <img src="./src/images/image-product-2.jpg" alt="thumbnails" class="img-fluid">
+                                </a>
+                                <a class="venobox" data-gall="product-details" href="./src/images/image-product-3.jpg">
+                                    <img src="./src/images/image-product-3.jpg" alt="thumbnails" class="img-fluid">
+                                </a>
+                                <a class="venobox" data-gall="product-details" href="./src/images/image-product-4.jpg">
+                                    <img src="./src/images/image-product-4.jpg" alt="thumbnails" class="img-fluid">
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <div class=" product-details-text">
+                            <p class="subtitle">Sneaker company</p>
+                            <h1 class="title">Fall limited edition sneakers</h1>
+                            <p class="desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis optio beatae, omnis
+                                ipsam ratione at quo laboriosam molestias corporis atque. Labore deleniti, consequatur
+                                ipsum enim quis odio sapiente! Quas, hic.
+                            </p>
+                            <div class="product-prices">
+                                <h1 class="discounted-price">$<span id="price">125.75</span> <span class="discount">50%</span></h1>
+                                <span class="normal-price"><del>$250</del></span>
+                            </div>
+                            <div class="add-to-cart-area">
+                                <div class="quantity-editor">
+                                    <button type="button" class="prev-number">
+                                        <svg width="12" height="4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <defs>
+                                                <path d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z" id="a" />
+                                            </defs>
+                                            <use fill="currentColor" fill-rule="nonzero" xlink:href="#a" />
+                                        </svg>
+                                    </button>
+                                    <input class="quantity-input" disabled type="text" value="1" min="1" max="5" autocomplete="off" height="100%">
+                                    <button type="button" class="next-number">
+                                        <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <defs>
+                                                <path
+                                                    d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z"
+                                                    id="b" />
+                                            </defs>
+                                            <use fill="currentColor" fill-rule="nonzero" xlink:href="#b" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button class="add-to-cart btn-brand btn-brand-orange">
+                                    <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="currentColor"
+                                            d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                                            fill-rule="nonzero" />
+                                    </svg>
+                                    <span>Add to cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Product Details Section  -->
+    </main>
+    <!-- End Main  -->
+
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.3/venobox.min.js"></script>
+    <script src="./src/js/app.js"></script>
+</body>
+
+</html>

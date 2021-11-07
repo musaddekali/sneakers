@@ -1,0 +1,43 @@
+@use '../utils' as *;
+
+:root {
+  --orange: #{$orange};
+  --light-orange: #{$light-orange};
+  --pale-orange: #{$pale-orange};
+  --very-dark-blue: #{$very-dark-blue};
+  --dark-grayish-blue: #{$dark-grayish-blue};
+  --grayish-blue: #{$grayish-blue};
+  --light-grayish-blue: #{$light-grayish-blue};
+  --white: #{$white};
+  --black: #{$black};
+  --lightbox-bg: #{$lightbox-bg};
+  /* using var  */
+  --primary: var(--dark-grayish-blue);
+  --secondary: var(--orange);
+  --accent: var(--light-orange);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--dark-grayish-blue);
+  background-color: var(--white);
+}
+
+main.main {
+  margin-top: 113px;
+  @include breakpoint-down('md') {
+    margin-top: 66px;
+  }
+}
+

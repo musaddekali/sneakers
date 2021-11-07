@@ -1,0 +1,11 @@
+.header{
+    width: 100%;
+    height: auto;
+    background: #fff;
+
+    &-hr {
+        margin: 0;
+        padding: 0;
+        background-color: var(--grayish-blue);
+    }
+}

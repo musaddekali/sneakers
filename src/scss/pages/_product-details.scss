@@ -1,0 +1,143 @@
+@use '../utils' as *;
+
+/* ------- Product Details ------- */
+.product-details {
+  padding: 90px 0 130px 0;
+
+  @include breakpoint-down('sm') {
+    padding-top: 0;
+  }
+
+  &-images {
+    padding: 0 50px;
+
+    @include breakpoint-down("sm") {
+      padding: 0 0 20px;
+    }
+
+    .image {
+      border-radius: 10px;
+      margin-bottom: 30px;
+      overflow: hidden;
+    }
+  }
+
+  .image-thumbnails {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    grid-gap: 30px;
+    cursor: pointer;
+
+    @include breakpoint-down("sm") {
+      display: none;
+    }
+
+    img {
+      border-radius: 10px;
+    }
+  }
+
+  &-text {
+    padding: 60px 50px 0;
+
+    @include breakpoint-down("sm") {
+      padding: 0;
+    }
+
+    .subtitle {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--orange);
+      margin-bottom: 24px;
+    }
+
+    .title {
+      font-size: 34px;
+      font-weight: 700;
+      color: initial;
+      margin-bottom: 48px;
+    }
+
+    .desc {
+      font-size: 14px;
+      margin-bottom: 38px;
+      line-height: 26px;
+    }
+
+    .product-prices {
+      margin-bottom: 30px;
+
+      .discounted-price {
+        font-size: 22px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        line-height: 1;
+
+        .discount {
+          font-size: 14px;
+          font-weight: 600;
+          padding: 6px;
+          margin-left: 15px;
+          border-radius: 6px;
+          background: #ffeee0;
+          color: var(--orange);
+        }
+      }
+      .normal-price {
+        font-size: 14px;
+        padding: 6px;
+        color: var(--grayish-blue);
+      }
+    }
+
+    .add-to-cart-area {
+      display: flex;
+      @include breakpoint-down("sm") {
+        flex-direction: column;
+      }
+    }
+    .quantity-editor {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-basis: 40%;
+      margin-right: 16px;
+      background: var(--light-grayish-blue);
+      @include breakpoint-down("sm") {
+        flex-basis: 100%;
+        margin-right: 0;
+        margin-bottom: 16px;
+      }
+
+      > * {
+        padding: 20px;
+        border: none;
+        outline: none;
+        background: transparent;
+        @include transition;
+      }
+
+      .prev-number:hover, .next-number:hover {
+        color : var(--secondary);
+      }
+
+      .quantity-input {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        font-weight: 600;
+        text-align: center;
+        user-select: none;
+      }
+    }
+
+    .add-to-cart {
+      border-radius: 10px;
+      flex-basis: 60%;
+      @include breakpoint-down("sm") {
+        flex-basis: 100%;
+      }
+    }
+  }
+}
